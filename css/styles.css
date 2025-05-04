@@ -40,7 +40,7 @@ a:hover {
 /* Structure */
 .header {
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     width: 100%;
     padding: 1rem;
 }
@@ -122,6 +122,19 @@ a:hover {
     display: none;
     justify-content: center;
     padding: 1rem;
+}
+
+.collapse-menu-mobile {
+    display: none;
+}
+
+.collapse-menu-mobile.active {
+    display: flex;
+}
+
+.collapse-menu-mobile > nav > ul {
+    display: flex;
+    flex-flow:column;
 }
 
 .hero-container {
@@ -287,6 +300,7 @@ a:hover {
     display: flex;
     flex-flow: column;
     width: 100%;
+    height: fit-content;
 }
 
 .window-content-inner {
@@ -445,6 +459,27 @@ a:hover {
         display: flex;
     }
 
+    .form-fields-container {
+        width: 100%;
+    }
+
+    .form-input {
+        flex-flow: column;
+        width: 100%;
+    }
+
+    .form-input > label {
+        width: 100%;
+    }
+
+    .form-input > input {
+        width: 100%;
+    }
+
+    .form-input > textarea {
+        width: 100%;
+    }
+
     @media (min-width: 600px) {
 
         /* Tablet styles */
@@ -468,6 +503,27 @@ a:hover {
         }
 
         .smalltext-right-subcontainer {
+            width: 100%;
+        }
+
+        .form-fields-container {
+            width: 100%;
+        }
+
+        .form-input {
+            flex-flow: column;
+            width: 100%;
+        }
+
+        .form-input > label {
+            width: 100%;
+        }
+    
+        .form-input > input {
+            width: 100%;
+        }
+
+        .form-input > textarea {
             width: 100%;
         }
 
