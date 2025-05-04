@@ -22,6 +22,9 @@ body {
     color: var(--white-color);
     font-weight: bold;
     font-size: var(--font-1-size);
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
 }
 
 /* General elements */
@@ -59,6 +62,7 @@ a:hover {
     display: flex;
     flex-flow: row;
     width: 100%;
+    flex: 1;
 }
 
 /* Elements */
@@ -76,6 +80,14 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
+
+.logo-link {
+    color: var(--background-color);
+}
+
+.logo-link:hover {
+    color: gray;
+}  
 
 .logo-img {
     width: 2.5rem;
@@ -278,6 +290,7 @@ a:hover {
 }
 
 .window-content-inner {
+    display: flex;
     padding: 1rem;
 }
 
@@ -295,13 +308,96 @@ a:hover {
 
 .window-container {
     border: 4px solid var(--white-color);
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
 }
 
 .normal-list > li {
     list-style: none;
     padding: 0.25rem 0;
+}
+
+.cv-container {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+.window-content-row {
+    flex-flow: row;
+}
+
+.window-content-column {
+    flex-flow: column;
+}
+
+.small-text-header {
+    font-size: 1rem;
+}
+
+.width-fit-content {
+    width: fit-content;
+    display: flex;
+}
+
+.cv-section {
+    padding: 1rem 0;
+}
+
+.project-section {
+    padding: 2rem 0;
+}
+
+.form {
+    width: 100%;
+}
+
+.contact-header {
+    background-color: var(--white-color);
+    color: var(--background-color);
+    width: fit-content;
+    padding: 0 1rem;
+}
+
+.form-fields-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.form-input {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    padding: 1rem 0;
+    width: 50%;
+}
+
+.form-input > label {
+    width: 30%;
+}
+
+.form-input > input {
+    width: 70%;
+}
+
+.form-input > textarea {
+    width: 70%;
+}
+
+.btn-wrapper {
+    padding: 1rem 0;
+}
+
+.btn {
+    border: 5px solid var(--white-color);
+    padding: 0.5rem 3rem;
+    background-color: var(--background-color);
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 1.25rem;
 }
 
 /* Breakpoints */
@@ -316,7 +412,7 @@ a:hover {
     }
 
     .smalltext-container {
-        flex-flow:column;
+        flex-flow: column;
     }
 
     .bigtext > span {
