@@ -480,6 +480,10 @@ a:hover {
         width: 100%;
     }
 
+    .body-container {
+        padding: 0rem 1rem;
+    }
+
     @media (min-width: 600px) {
 
         /* Tablet styles */
