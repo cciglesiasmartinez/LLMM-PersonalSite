@@ -300,7 +300,7 @@ a:hover {
     display: flex;
     flex-flow: column;
     width: 100%;
-    height: fit-content;
+    /* height: fit-content; */
 }
 
 .window-content-inner {
