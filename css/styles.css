@@ -553,7 +553,7 @@ a:hover {
         }
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 900px) {
         /* Landscaped mobiles */
         .icon {
             width: 10rem;
@@ -562,6 +562,20 @@ a:hover {
 
         .bigtext > span {
             font-size: 5rem;
+        }
+    }
+    
+    @media (max-width: 700px) {
+        .icon {
+            width: 8rem;
+            height: 8rem;
+        }
+        .icon-img {
+            width: 6rem;
+            height: 6rem;
+        }
+        .icon-text {
+            font-size: 15px;
         }
     }
 }
