@@ -484,6 +484,10 @@ a:hover {
         padding: 0rem 1rem;
     }
 
+    .logo-link {
+        font-size: 1.25rem;
+    }
+
     @media (min-width: 600px) {
 
         /* Tablet styles */
@@ -546,6 +550,18 @@ a:hover {
         .icon {
             width: 12rem;
             height: 12rem;
+        }
+    }
+
+    @media (max-width: 800px) {
+        /* Landscaped mobiles */
+        .icon {
+            width: 10rem;
+            height: 10rem;
+        }
+
+        .bigtext > span {
+            font-size: 5rem;
         }
     }
 }
