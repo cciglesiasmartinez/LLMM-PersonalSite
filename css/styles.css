@@ -414,7 +414,7 @@ a:hover {
     font-size: 1.25rem;
 }
 
-.screen-size {
+#screen-size {
     color: var(--background-color);
 }
 
