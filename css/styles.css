@@ -414,6 +414,10 @@ a:hover {
     font-size: 1.25rem;
 }
 
+.size-display {
+    color: var(--background-color);
+}
+
 /* Breakpoints */
 
 @media (orientation: portrait) {
