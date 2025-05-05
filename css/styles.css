@@ -300,7 +300,6 @@ a:hover {
     display: flex;
     flex-flow: column;
     width: 100%;
-    /* height: fit-content; */
 }
 
 .window-content-inner {
@@ -314,6 +313,7 @@ a:hover {
     font-size: 1.25rem;
     color: var(--background-color);
     font-weight: bold;
+    width: fit-content;
 }
 
 .window-bar > span {
