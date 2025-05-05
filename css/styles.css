@@ -581,6 +581,12 @@ a:hover {
         .icon-text {
             font-size: 15px;
         }
+        .bigtext > span {
+            font-size: 5rem;
+        }
+        .logo-link {
+            font-size: 1.25rem;
+        }
     }
 }
   
